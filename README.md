@@ -10,7 +10,7 @@ Introduction to Scala (2013-02-25)
    - add following line into plugins.sbt<br>
    <code>addSbtPlugin("com.typesafe.sbteclipse" % "sbteclipse-plugin" % "2.1.0")</code>
 4. Download this project as Zip file, and extract it where you want
-5. In the scala-nigth project folder run 'sbt eclipse' command to create an Eclipse project:<br>
+5. In the scala-night project folder run 'sbt eclipse' command to create an Eclipse project:<br>
    <code>scala-night> <b>sbt eclipse</b></code>
 6. Import scala-night project into Scala IDE
    - File -> Import... -> Existing Projects into Workspace
