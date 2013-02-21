@@ -1,4 +1,4 @@
-package fi.kilosoft.scalanight
+package scalanight
 
 object Hello extends App {
   println("Hello World!")

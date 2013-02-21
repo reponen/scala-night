@@ -1,11 +1,11 @@
 package scalanight
 
 import org.scalatest.FunSuite
-
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
 
 import Functions._
+
 
 @RunWith(classOf[JUnitRunner])
 class FunctionSuite extends FunSuite {

@@ -1,8 +1,9 @@
-package fi.kilosoft.scalanight
+package scalanight
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+
 
 @RunWith(classOf[JUnitRunner])
 class ListSuite extends FunSuite {

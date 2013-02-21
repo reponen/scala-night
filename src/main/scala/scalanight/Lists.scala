@@ -1,4 +1,4 @@
-package fi.kilosoft.scalanight
+package scalanight
 
 import common._
 

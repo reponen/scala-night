@@ -1,15 +1,16 @@
-package fi.kilosoft.scalanight
+package scalanight
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+
 
 @RunWith(classOf[JUnitRunner])
 class HelloSuite extends FunSuite {
  
   test("the name is set correctly in constructor") {
     val p = Person("Barney Rubble") 
-    assert(p.name == "Barney Rubble")
+    assert(p.name === "Barney Rubble")
   }
  
   test("a Person's name can be changed") {
