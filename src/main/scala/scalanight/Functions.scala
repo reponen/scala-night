@@ -24,7 +24,7 @@ object Functions {
 
   /**
    * EXERCISE 4.
-   * write function abs that takes a double and returns the absolute value of it
+   * write function abs that takes a double and returns its absolute value
    */
   def abs(x: Double): Double = ???
 
