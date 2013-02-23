@@ -19,13 +19,12 @@ object Functions {
   /**
    * EXERCISE 3.
    * write  functions square that returns the square of the given parameter
-   * and a
    */
   def square(x: Double): Double = ???
 
   /**
    * EXERCISE 4.
-   * write function abs that takes a double and returns the absolute value of that
+   * write function abs that takes a double and returns the absolute value of it
    */
   def abs(x: Double): Double = ???
 
@@ -59,13 +58,13 @@ object Functions {
   // ----
 
   /**
-   * EXERCISE 8. Square Roots by Newton’s Method
+   * EXERCISE 8. Square Roots by Newtonï¿½s Method
    *
    * write a function
    *    def sqrt(x: Double): Double = ...
    *
    * which computes the square root of x.
-   * A common way to compute square roots is by Newton’s method of successive approximations.
+   * A common way to compute square roots is by Newtonï¿½s method of successive approximations.
    * One starts with an initial guess y (say: y = 1). One then repeatedly
    * improves the current guess y by taking the average of y and x/y.
    *
@@ -100,9 +99,9 @@ object Functions {
    */
 
   /**
-   * EXERCISE 9: Pascal’s Triangle
+   * EXERCISE 9: Pascalï¿½s Triangle
    *
-   * The following pattern of numbers is called Pascal’s triangle:
+   * The following pattern of numbers is called Pascalï¿½s triangle:
    * 	 1
    *    1 1
    *   1 2 1
@@ -127,13 +126,13 @@ object Functions {
    *  return true for the following strings:
    *
    * 	(if (zero? x) max (/ 1 x))
-   *    I told him (that it’s not (yet) done). (But he wasn’t listening)
+   *    I told him (that itï¿½s not (yet) done). (But he wasnï¿½t listening)
    *
    * The function should return false for the following strings:
    *    :-)
    *    ())(
    *
-   * The last example shows that it’s not enough to verify that a string contains the
+   * The last example shows that itï¿½s not enough to verify that a string contains the
    * same number of opening and closing parentheses.
    *
    * There are three methods on List[Char] that are useful for this exercise:

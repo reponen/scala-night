@@ -7,13 +7,19 @@ object Lists {
 
   def tail(inLst: List[Int]): Int = ???
   
-  // :: creates a new list
+  /**
+   * This method filters even numbers away, and returns a list containing only odd numbers 
+   */
+
   def odd(inLst: List[Int]): List[Int] = {
     if (inLst == Nil) Nil
     else if (inLst.head % 2 == 1) inLst.head :: odd(inLst.tail)
     else odd(inLst.tail)
   }
   
+  /**
+   * Write a method that filters odd numbers, and returns a list containing only even numbers
+   */
   def even(inLst: List[Int]): List[Int] = ???
   
   
