@@ -1,8 +1,9 @@
-package fi.kilosoft.scalanight
+package scalanight
 
 import org.scalatest.FunSuite
 import org.junit.runner.RunWith
 import org.scalatest.junit.JUnitRunner
+
 
 @RunWith(classOf[JUnitRunner])
 class ListSuite extends FunSuite {
@@ -25,5 +26,13 @@ class ListSuite extends FunSuite {
   test("even () returns only even numbers") {
     val lst=List(1,7,2,8,5,6,3,9,14,12,4,10)
     assert(Lists.even(lst) === List(2,8,6,14,12,4,10))
+  }
+  
+  test("sum") {
+     assert(Lists.sum(List(1,2,3,5)) === 15)
+  }
+  
+  test("max") {
+    assert(Lists.max(List(1,2,3,5,6,7,6,5,4,3,2,1)) === 7)
   }
 }
