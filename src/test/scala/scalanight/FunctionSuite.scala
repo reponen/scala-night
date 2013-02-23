@@ -6,6 +6,7 @@ import org.scalatest.junit.JUnitRunner
 
 import Functions._
 
+
 @RunWith(classOf[JUnitRunner])
 class FunctionSuite extends FunSuite {
 
