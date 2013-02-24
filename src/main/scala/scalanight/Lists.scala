@@ -6,9 +6,9 @@ object Lists {
   def head(inLst: List[Int]): Int = inLst.head
 
   def tail(inLst: List[Int]): Int = ???
-  
+
   /**
-   * This method filters even numbers away, and returns a list containing only odd numbers 
+   * This method filters even numbers away, and returns a list containing only odd numbers
    */
 
   def odd(inLst: List[Int]): List[Int] = {
@@ -16,11 +16,19 @@ object Lists {
     else if (inLst.head % 2 == 1) inLst.head :: odd(inLst.tail)
     else odd(inLst.tail)
   }
-  
+
   /**
    * Write a method that filters odd numbers, and returns a list containing only even numbers
    */
   def even(inLst: List[Int]): List[Int] = ???
+
+  
+  /**
+   * Write a function getNth that returns the nth item of list
+   * 
+   * use only tail, head and isEmpty or pattern matching + recursion 
+   */
+  def getNth(n: Int, list: List[Int]): Int = ???
   
   
   /**
@@ -59,5 +67,18 @@ object Lists {
    * @throws java.util.NoSuchElementException if `xs` is an empty list
    */
   def max(xs: List[Int]): Int = ???
+
+  /**
+   * Write a function sequence that takes 3 arguments low, high, and stride, all assumed to be numbers.
+   * Further assume stride is positive. sequence produces a list of numbers from low to high (including
+   * low and possibly high) separated by stride and in sorted order.
+   * 
+   * Examples:
+   * 	Call:							Result:
+   * 	sequence(3, 11, 2) 		-> 		[3 5 7 9 11]
+   * 	sequence(3, 8, 3) 		->		[3 6]
+   * 	sequence(3, 2, 1) 		->		[]
+   */
+  def sequence(low: Int, high: Int, stride: Int): List[Int] = ???
 
 }
