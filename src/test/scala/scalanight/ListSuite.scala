@@ -29,10 +29,20 @@ class ListSuite extends FunSuite {
   }
   
   test("sum") {
-     assert(Lists.sum(List(1,2,3,5)) === 15)
+     assert(Lists.sum(List(1,2,3,4,5)) === 15)
+  }
+
+  test("sum of empty list is zero") {
+     assert(Lists.sum(List()) === 0)
   }
   
   test("max") {
     assert(Lists.max(List(1,2,3,5,6,7,6,5,4,3,2,1)) === 7)
+  }
+  
+  test("max of empty list throws NoSuchElementException") {
+    intercept[NoSuchElementException] {
+      Lists.max(List())
+    }
   }
 }
