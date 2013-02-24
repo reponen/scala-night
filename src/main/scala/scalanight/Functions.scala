@@ -58,7 +58,21 @@ object Functions {
   // ----
 
   /**
-   * EXERCISE 8. Square Roots by Newton�s Method
+   * EXERCISE 8. Fibonacci sequence
+   * 
+   * In the Fibonacci sequence of numbers, each number is the sum
+   * of the previous two numbers, starting with 0 and 1. 
+   * This sequence begins 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987 ...
+   *  
+   * The higher up in the sequence, the closer two consecutive "Fibonacci numbers" of the sequence
+   * divided by each other will approach the golden ratio (approximately 1 : 1.618 or 0.618 : 1).
+   * 
+   * Write a recursive function that returns nth Fibonacci number
+   */
+  def fibonacci(n: Int): Int = ???
+  
+  /**
+   * EXERCISE 9. Square Roots by Newton�s Method
    *
    * write a function
    *    def sqrt(x: Double): Double = ...
@@ -95,11 +109,11 @@ object Functions {
 
   /**
    * **********************************************
-   * Below problems are much more difficult  than the previous ones
+   * Below problems are much more difficult than the previous ones
    */
 
   /**
-   * EXERCISE 9: Pascal�s Triangle
+   * EXERCISE 10: Pascal�s Triangle
    *
    * The following pattern of numbers is called Pascal�s triangle:
    * 	 1
@@ -119,7 +133,7 @@ object Functions {
   def pascal(c: Int, r: Int): Int = ???
 
   /**
-   *  EXERCISE 10: Parentheses Balancing
+   *  EXERCISE 11: Parentheses Balancing
    *
    *  Write a recursive function which verifies the balancing of parentheses in a string,
    *  which we represent as a List[Char] not a String. For example, the function should

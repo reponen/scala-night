@@ -43,6 +43,15 @@ class FunctionSuite extends FunSuite {
     assert(sumSquaresHi(1, 5) === 55)
   }
   
+  test("test fibonacci sequence") {
+    assert(fibonacci(0) === 0)
+    assert(fibonacci(1) === 1)
+    assert(fibonacci(2) === 1)
+    assert(fibonacci(3) === 2)
+    assert(fibonacci(8) === 21)
+    assert(fibonacci(20) === 6765)
+  }
+  
   test("test newtons square") {
     assert(newtonSqrt(2) - 1.414 < 0.001 )
   }
