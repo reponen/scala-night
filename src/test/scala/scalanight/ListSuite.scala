@@ -31,6 +31,25 @@ class ListSuite extends FunSuite {
     assert(Lists.getNth(2, List(1, 2, 3, 4, 5, 6, 7, 8)) === 3)
   }
 
+  test("length of list") {
+	assert(Lists.length(List[Int]()) === 0)
+    assert(Lists.length(List(1,2,3)) === 3)
+    assert(Lists.length(List(1,2,3,4,5,6,7,8,9,0)) === 10)
+  }
+  
+  test("reverse of list") {
+    assert(Lists.reverse(List()) === List())
+    assert(Lists.reverse(List(1)) === List(1))
+    assert(Lists.reverse(List(1,2,3,4,5)) === List(5, 4, 3, 2, 1))
+  }
+  
+  test("is palindrome") {
+    assert(Lists.isPalindrome(List(1)) === true)
+    assert(Lists.isPalindrome(List(1, 1)) === true)
+    assert(Lists.isPalindrome(List(1,2,3,2,1)) === true)
+    assert(Lists.isPalindrome(List(1,2,3,2)) === false)
+  }
+  
   test("sum") {
     assert(Lists.sum(List(1, 2, 3, 4, 5)) === 15)
   }
