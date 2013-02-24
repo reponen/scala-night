@@ -28,7 +28,7 @@ object Lists {
    * 
    * use only tail, head and isEmpty or pattern matching + recursion 
    */
-  def getNth(n: Int, list: List[Int]): Int = ???
+  def getNth[T](n: Int, list: List[T]): T = ???
   
   
   /**
@@ -74,10 +74,11 @@ object Lists {
    * low and possibly high) separated by stride and in sorted order.
    * 
    * Examples:
-   * 	Call:							Result:
-   * 	sequence(3, 11, 2) 		-> 		[3 5 7 9 11]
-   * 	sequence(3, 8, 3) 		->		[3 6]
-   * 	sequence(3, 2, 1) 		->		[]
+   * 
+   * 	Call:					Result:
+   * 	sequence(3, 11, 2) 	= 	List(3, 5, 7, 9, 11)
+   * 	sequence(3, 8, 3)  	=	List(3, 6)
+   * 	sequence(3, 2, 1)  	=	List()
    */
   def sequence(low: Int, high: Int, stride: Int): List[Int] = ???
 
