@@ -32,7 +32,7 @@ object Lists {
   /**
    * Write a method that recursively calculates length of a list
    */
-  def length[T](list: List[T]): T = ???
+  def length[T](list: List[T]): Int = ???
   
   /**
    * Write a method that recursively reverses a list
