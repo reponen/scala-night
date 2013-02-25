@@ -28,7 +28,7 @@ class FunctionSuite extends FunSuite {
   }
 
   test("sumInts of 1,2,3,4,5 equals 15") {
-    assert(sumInts(2, 5) === 15)
+    assert(sumInts(1, 5) === 15)
   }
 
   test("sumSquares of 2,3,4 equals 29") {
