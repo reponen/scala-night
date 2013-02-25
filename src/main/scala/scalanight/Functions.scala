@@ -6,7 +6,7 @@ object Functions {
 
   /**
    * EXERCISE 1.
-   * write a function hello that returns a string "Hello!"
+   * write a function hello that returns a string "Hello"
    */
   def hello(): String = ???
 
