@@ -8,9 +8,8 @@ object Lists {
   def tail(inLst: List[Int]): Int = ???
 
   /**
-   * This method filters even numbers away, and returns a list containing only odd numbers
+   * This method filters even numbers, and returns a list containing only odd numbers
    */
-
   def odd(inLst: List[Int]): List[Int] = {
     if (inLst == Nil) Nil
     else if (inLst.head % 2 == 1) inLst.head :: odd(inLst.tail)
@@ -22,15 +21,38 @@ object Lists {
    */
   def even(inLst: List[Int]): List[Int] = ???
 
-  
   /**
-   * Write a function getNth that returns the nth item of list
+   * Write a method getNth that returns the nth item of list
    * 
    * use only tail, head and isEmpty or pattern matching + recursion 
    */
   def getNth[T](n: Int, list: List[T]): T = ???
   
+
+  /**
+   * Write a method that recursively calculates length of a list
+   */
+  def length[T](list: List[T]): T = ???
   
+  /**
+   * Write a method that recursively reverses a list
+   * 
+   * Example:
+   *  Lists.reverse(List(1,2,3)) == List(3,2,1)
+   */
+  def reverse[T](list: List[T]): List[T] = ???
+  
+  /**
+   *  Find out whether a list is a palindrome.
+   *  
+   *  Example:
+   *   isPalindrome(List(1))             == true
+   *   isPalindrome(List(1, 1))          == true 
+   *   isPalindrome(List(1, 2, 3, 2, 1)) == true
+   *   isPalindrome(List(1, 2, 3, 2))    == false
+   */
+  def isPalindrome(list: List[Int]): Boolean = ???
+
   /**
    * This method computes the sum of all elements in the list xs. There are
    * multiple techniques that can be used for implementing this method, and
@@ -82,4 +104,5 @@ object Lists {
    */
   def sequence(low: Int, high: Int, stride: Int): List[Int] = ???
 
+  
 }
